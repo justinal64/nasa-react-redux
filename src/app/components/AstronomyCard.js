@@ -34,19 +34,20 @@ const AstronomyCard = props => {
 
   return (
     <div className="astronomy-card">
-      <h6 className="astronomy-title">
-        {title}
-      </h6>
-
       {renderContent()}
+      <div className="img-details">
+        <h6 className="astronomy-title">
+          {title}
+        </h6>
 
-      <p>
-        {explanation}
-      </p>
+        <p>
+          {explanation}
+        </p>
 
-      <span>
-        {date}, {copyright}
-      </span>
+        <span>
+          {date}, {copyright}
+        </span>
+      </div>
     </div>
   );
 };

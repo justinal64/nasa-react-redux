@@ -1,17 +1,37 @@
+html,
 body {
-    background-color: blue;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    /* Height and width fallback for older browsers. */
     height: 100%;
+    width: 100%;
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+    /* Remove any browser-default margins. */
+    margin: 0;
 }
 
 .astronomy-card {
-    width: 90%;
-    margin: 0 auto;
+    // max-width: 90vw;
+    // margin: 50px auto;
+    // display: flex;
+    text-align: center;
+    background-color: #fff;
     img {
-        min-width: 90vw;
-        min-height: 90vh;
+        // height: 90%;
+        min-width: 100vw;
+        max-width: 100vw;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+    .astronomy-title {
+        margin: 25px 0;
+        padding: 15px 45px;
+        font-size: 18px;
+        color: #6200ea;
+    }
+    .img-details {
+        margin: 0 auto;
+        width: 75vw;
     }
 }
