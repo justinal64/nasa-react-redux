@@ -36,9 +36,9 @@ const AstronomyCard = props => {
     <div className="astronomy-card">
       {renderContent()}
       <div className="img-details">
-        <h6 className="astronomy-title">
+        <h2 className="astronomy-title">
           {title}
-        </h6>
+        </h2>
 
         <p>
           {explanation}

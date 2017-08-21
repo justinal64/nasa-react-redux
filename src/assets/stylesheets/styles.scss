@@ -27,11 +27,15 @@ body {
     .astronomy-title {
         margin: 25px 0;
         padding: 15px 45px;
-        font-size: 18px;
+        font-size: 40px;
         color: #6200ea;
     }
     .img-details {
         margin: 0 auto;
         width: 75vw;
+        padding-bottom: 2em;
+    }
+    p {
+        font-size: 1.25em;
     }
 }
