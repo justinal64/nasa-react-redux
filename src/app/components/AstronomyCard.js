@@ -25,11 +25,7 @@ const AstronomyCard = props => {
         );
 
       case "image":
-        return (
-          <a href={hdurl} className="astronomy-image-wrapper">
-            <img src={url} alt={title} />
-          </a>
-        );
+        return <img src={url} alt={title} />;
 
       default:
         return null;
@@ -38,19 +34,20 @@ const AstronomyCard = props => {
 
   return (
     <div className="astronomy-card">
-      <h6 className="astronomy-title">
-        {title}
-      </h6>
-
       {renderContent()}
+      <div className="img-details">
+        <h6 className="astronomy-title">
+          {title}
+        </h6>
 
-      <p>
-        {explanation}
-      </p>
+        <p>
+          {explanation}
+        </p>
 
-      <span>
-        {date}, {copyright}
-      </span>
+        <span>
+          {date}, {copyright}
+        </span>
+      </div>
     </div>
   );
 };
