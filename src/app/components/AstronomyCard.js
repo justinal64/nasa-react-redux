@@ -25,11 +25,7 @@ const AstronomyCard = props => {
         );
 
       case "image":
-        return (
-          <a href={hdurl} className="astronomy-image-wrapper">
-            <img src={url} alt={title} />
-          </a>
-        );
+        return <img src={url} alt={title} />;
 
       default:
         return null;
