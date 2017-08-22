@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <AstronomyContainer />
-      <UserContainer />
+      {/* <UserContainer /> Used to drive in the idea for redux */}
     </div>
   );
 };
