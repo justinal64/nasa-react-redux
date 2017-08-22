@@ -2,14 +2,21 @@ import React, { Component } from "react";
 import AstronomyCard from "./AstronomyCard";
 import { connect } from "react-redux";
 import fetchData from "../../actions/fetch_data";
+import test from "../../actions/test";
 
 class AstronomyContainer extends Component {
   componentWillMount() {
     this.props.fetchData();
+    // this.props.test();
   }
 
   render() {
-    return <AstronomyCard data={this.props.astronomy} />;
+    return (
+      <div>
+        <AstronomyCard data={this.props.astronomy} />
+        <button onClick={this.props.test}>Button</button>
+      </div>
+    );
   }
 }
 
@@ -20,4 +27,6 @@ function mapStateToProps(state) {
   return { astronomy: state.astronomy };
 }
 
-export default connect(mapStateToProps, { fetchData })(AstronomyContainer);
+export default connect(mapStateToProps, { fetchData, test })(
+  AstronomyContainer
+);

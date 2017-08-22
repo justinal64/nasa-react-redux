@@ -27,7 +27,3 @@ export default function fetchData() {
     payload: request // Action Payload(cargo)
   };
 }
-
-// export default (state = {}, action) => {
-//     return state;
-//   };
