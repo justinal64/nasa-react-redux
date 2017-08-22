@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AstronomyCard from "./AstronomyCard";
 import { connect } from "react-redux";
 import randomData from "../../actions/random_data";
+import UserCard from "./UserCard";
 
 class UserContainer extends Component {
   componentWillMount() {
@@ -11,8 +12,8 @@ class UserContainer extends Component {
   render() {
     return (
       <div>
-        <h3>Hello from the user container</h3>
-        <button onClick={this.props.randomData}>Button</button>
+        <UserCard data={this.props.data} />
+        <button onClick={this.props.randomData}>Update randomData</button>
       </div>
     );
   }
@@ -22,7 +23,7 @@ class UserContainer extends Component {
 // @params mapStateToProps (necessity)
 // @params mapDispatchToProps (optional)
 function mapStateToProps(state) {
-  return { astronomy: state.astronomy };
+  return { data: state.randomData };
 }
 
 export default connect(mapStateToProps, { randomData })(UserContainer);

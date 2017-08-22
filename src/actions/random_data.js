@@ -6,7 +6,7 @@ export default function randomData() {
   const request = axios.get(END_POINT);
   return {
     // Return plain object with props
-    type: "ANOTHER_TEST", // Action Type
+    type: "RANDOM_DATA", // Action Type
     payload: request // Action Payload(cargo)
   };
 }
