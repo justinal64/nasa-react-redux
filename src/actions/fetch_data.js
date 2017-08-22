@@ -15,7 +15,6 @@ export default function fetchData() {
   };
 
   const apiDate = randomDate();
-  console.log(apiDate);
 
   const API_KEY = "Yxr0aPO5Go1B1eAu8BYhZiR1tQXVMhNeXb4FqYHG";
   const END_POINT = `https://api.nasa.gov/planetary/apod?date=${apiDate}&api_key=`;
