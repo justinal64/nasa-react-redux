@@ -15,5 +15,10 @@ npm run start
 ```
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser to view the output.
 
+## Built With
+
+* [React](https://facebook.github.io/react/) - Web Framework
+* [Redux](http://redux.js.org/) - Redux
+
 ## Contributors
 - [Justin Leggett](https://github.com/justinal64)
