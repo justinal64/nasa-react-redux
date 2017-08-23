@@ -11,10 +11,6 @@ class AstronomyContainer extends Component {
   componentDidMount() {
     setInterval(this.props.fetchData.bind(this), 100000); // 300000 = 5 minutes
   }
-  // setInterval(function() {
-  //   this.props.fetchData();
-  // }, 10000);
-
   render() {
     return <AstronomyCard data={this.props.astronomy} />;
   }
