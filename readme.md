@@ -1,8 +1,5 @@
 # Nasa React with Redux
 
-https://medium.com/@wesharehoodies/simple-beginner-guide-for-webpack-2-0-from-scratch-part-v-495dba627718
-
-
 ## Description
 In this project I taught myself how to use redux following [this](https://medium.com/@wesharehoodies/simple-beginner-guide-for-webpack-2-0-from-scratch-part-v-495dba627718) tutorial. To drive home the idea of redux I created a UserContainer and UserCard to understand just what redux is doing. I used the NASA API to pull images and data and display it to the user. I also setup a timer that poles the nasa api every minute and a half to pull new images. If you would like additional information about the image scroll down, other wise you can leave this up on a monitor and look at images of space all day. 
 
