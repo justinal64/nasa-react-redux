@@ -16,10 +16,6 @@ class AstronomyContainer extends Component {
   // }, 10000);
 
   render() {
-    const test = () => {
-      this.props.fetchData();
-    };
-
     return <AstronomyCard data={this.props.astronomy} />;
   }
 }
